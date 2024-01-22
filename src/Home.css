@@ -1,0 +1,22 @@
+:root {
+  --print-color-adjust: #091242;
+  --primary-yellow-color: #FFBE34;
+  --primary-white-color:#F4F4F4
+  --font-blue-color:#1C1F35
+  --font-gray-color:#666C89
+  --gradient-color: linear-gradient(94deg, #FFB629 0%, #FFDA56 51%, #FFD7A6 100%);
+}
+/* h1 {
+  font-family: 'Krub', sans-serif;
+} */
+body {
+  margin: 0;
+font-family: 'Rubik', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

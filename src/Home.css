@@ -1,10 +1,15 @@
 :root {
   --primary-color-blue: #091242;
-  --primary-yellow-color: #FFBE34;
-  --primary-white-color: #F4F4F4;
-  --font-blue-color: #1C1F35;
-  --font-gray-color: #666C89;
-  --gradient-color: linear-gradient(94deg, #FFB629 0%, #FFDA56 51%, #FFD7A6 100%);
+  --primary-yellow-color: #ffbe34;
+  --primary-white-color: #f4f4f4;
+  --font-blue-color: #1c1f35;
+  --font-gray-color: #666c89;
+  --gradient-color: linear-gradient(
+    94deg,
+    #ffb629 0%,
+    #ffda56 51%,
+    #ffd7a6 100%
+  );
 }
 
 * {
@@ -14,7 +19,7 @@
 
 body {
   margin: 0;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   /* Uncomment the following lines if needed */
   /* -webkit-font-smoothing: antialiased; */
   /* -moz-osx-font-smoothing: grayscale; */
@@ -23,7 +28,7 @@ body {
 .header {
   max-width: 1200px; /* Set your desired max-width */
   margin: 0 auto;
-  height: 160px;
+  height: 100px;
   background-color: var(--primary-color-blue);
   display: flex;
   align-items: center;
@@ -32,7 +37,7 @@ body {
 }
 
 .logo-header {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 30px;
   font-style: normal;
   line-height: normal;
@@ -61,7 +66,7 @@ body {
   color: #fff;
   font-size: 14px;
   font-style: normal;
-  font-family: 'Krub', sans-serif; /* Uncomment if needed */
+  font-family: "Krub", sans-serif; /* Uncomment if needed */
   font-weight: normal;
   margin-top: 6px;
 }
@@ -79,3 +84,38 @@ body {
   border-radius: 50%;
   background-color: #111c55;
 }
+.menu {
+  background-image: url('./hero.jpeg');
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  height: 100vh; 
+}
+/* Navbar.css */
+.navbar {
+  background-color: #333;
+  padding: 10px;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item a:hover {
+  color: #ff0; /* Change color on hover */
+}
+

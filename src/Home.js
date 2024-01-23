@@ -1,11 +1,14 @@
 import React from "react";
 import { IoCallOutline, IoMailOutline, IoTimeOutline } from "react-icons/io5";
+import { Link } from 'react-router-dom'; 
+
 import "./Home.css";
 
 export function Home() {
   return (
     <div>
       <Header />
+      <Menu/>
     </div>
   );
 }
@@ -43,6 +46,31 @@ function Address({ icon, text }) {
           </React.Fragment>
         ))}
       </p>
+    </div>
+  );
+}
+function Menu(){
+  return (
+    <div className="menu">
+      <nav className="navbar">
+        <ul className="nav-list">
+          <li className="nav-item">
+            <Link to="/">Home</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/about">About</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/about">Pages</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/about">Project</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/contact">Contact</Link>
+          </li>
+        </ul>
+      </nav>
     </div>
   );
 }

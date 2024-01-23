@@ -1,5 +1,5 @@
 :root {
-  --print-color-adjust: #091242;
+  --primary-color-blue: #091242;
   --primary-yellow-color: #FFBE34;
   --primary-white-color:#F4F4F4
   --font-blue-color:#1C1F35
@@ -9,14 +9,70 @@
 /* h1 {
   font-family: 'Krub', sans-serif;
 } */
-body {
+*{
   margin: 0;
-font-family: 'Rubik', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+margin: 0;
+font-family: 'Rubik', sans-serif;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}
+.header{
+  width: 1920px;
+  height: 160px;
+  background-color:var(--primary-color-blue);
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 244px;
+}
+.logo-header{
+font-family: rubik;
+font-size: 30px;
+font-style: normal;
+/* font-weight: 600; */
+line-height: normal;
+gap: 244px;
+display: flex;
+border: 2px solid rgb(107, 201, 13);
+align-items: center;
+margin: 24px auto;
+}
+.logo-header img{
+  width: 48px;
+  height: 48px;
+}
+.logo-header h3{
+  color:#fff;
+  font-family: 'Rubik',sans-serif;
+}
+.address-bar{
+  color: var(--primary-yellow-color);
+   display: flex;
+  flex-direction: row;
+  /* border: 2px solid rebeccapurple; */
+  gap: 39px;
+}
+.address-bar p{
+  color:#fff;
+  font-size: 14px;
+  font-style: normal;
+  font-family: 'Krub',sans-serif;
+  font-weight:normal; 
+  margin-top:6px ;
+  /* border: 2px solid red; */
+}
+.address{
+display: flex;
+flex-direction: row;
+gap: 12px;
+}
+.icon{
+  width: 32px;
+  height: 32px; 
+  padding: 8px;
+  border-radius: 50%;
+  background-color:#111c55;
 }

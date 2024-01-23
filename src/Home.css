@@ -1,78 +1,81 @@
 :root {
   --primary-color-blue: #091242;
   --primary-yellow-color: #FFBE34;
-  --primary-white-color:#F4F4F4
-  --font-blue-color:#1C1F35
-  --font-gray-color:#666C89
+  --primary-white-color: #F4F4F4;
+  --font-blue-color: #1C1F35;
+  --font-gray-color: #666C89;
   --gradient-color: linear-gradient(94deg, #FFB629 0%, #FFDA56 51%, #FFD7A6 100%);
 }
-/* h1 {
-  font-family: 'Krub', sans-serif;
-} */
-*{
+
+* {
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
-margin: 0;
-font-family: 'Rubik', sans-serif;
-  /* -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+  /* Uncomment the following lines if needed */
+  /* -webkit-font-smoothing: antialiased; */
+  /* -moz-osx-font-smoothing: grayscale; */
 }
-.header{
-  width: 1920px;
+
+.header {
+  max-width: 1200px; /* Set your desired max-width */
+  margin: 0 auto;
   height: 160px;
-  background-color:var(--primary-color-blue);
+  background-color: var(--primary-color-blue);
   display: flex;
-  flex-shrink: 0;
   align-items: center;
-  gap: 244px;
+  justify-content: space-between;
+  padding: 0 20px; /* Add some padding to the sides */
 }
-.logo-header{
-font-family: rubik;
-font-size: 30px;
-font-style: normal;
-/* font-weight: 600; */
-line-height: normal;
-gap: 244px;
-display: flex;
-border: 2px solid rgb(107, 201, 13);
-align-items: center;
-margin: 24px auto;
+
+.logo-header {
+  font-family: 'Rubik', sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  line-height: normal;
+  display: flex;
+  align-items: center;
 }
-.logo-header img{
+
+.logo-header img {
   width: 48px;
   height: 48px;
+  margin-right: 10px; /* Add some margin to separate the image from text */
 }
-.logo-header h3{
-  color:#fff;
-  font-family: 'Rubik',sans-serif;
+
+.logo-header h3 {
+  color: #fff;
 }
-.address-bar{
+
+.address-bar {
   color: var(--primary-yellow-color);
-   display: flex;
+  display: flex;
   flex-direction: row;
-  /* border: 2px solid rebeccapurple; */
-  gap: 39px;
+  gap: 20px; /* Reduce the gap between address items */
 }
-.address-bar p{
-  color:#fff;
+
+.address-bar p {
+  color: #fff;
   font-size: 14px;
   font-style: normal;
-  font-family: 'Krub',sans-serif;
-  font-weight:normal; 
-  margin-top:6px ;
-  /* border: 2px solid red; */
+  font-family: 'Krub', sans-serif; /* Uncomment if needed */
+  font-weight: normal;
+  margin-top: 6px;
 }
-.address{
-display: flex;
-flex-direction: row;
-gap: 12px;
+
+.address {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
 }
-.icon{
+
+.icon {
   width: 32px;
-  height: 32px; 
+  height: 32px;
   padding: 8px;
   border-radius: 50%;
-  background-color:#111c55;
+  background-color: #111c55;
 }

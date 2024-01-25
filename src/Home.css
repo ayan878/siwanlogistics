@@ -62,13 +62,14 @@ body {
   gap: 20px; /* Reduce the gap between address items */
 }
 
-.address-bar p {
+.address-bar p, .address-text {
   color: #fff;
   font-size: 14px;
   font-style: normal;
   font-family: "Krub", sans-serif; /* Uncomment if needed */
   font-weight: normal;
   margin-top: 6px;
+  white-space: pre-line;
 }
 
 .address {

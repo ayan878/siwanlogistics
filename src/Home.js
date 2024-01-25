@@ -17,7 +17,7 @@ export function Home() {
   return (
     <div>
       <Header />
-      <Menu/>
+      <Menu />
     </div>
   );
 }
@@ -62,7 +62,7 @@ function Address({ label, value, icon }) {
   );
 }
 
-function Menu(){
+function Menu() {
   return (
     <div className="menu">
       {/* <nav className="navbar">

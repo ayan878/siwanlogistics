@@ -1,6 +1,8 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Navbar, Nav } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
 import { IoCallOutline, IoMailOutline, IoTimeOutline } from "react-icons/io5";
 
 const addressData = [
@@ -65,25 +67,49 @@ function Address({ label, value, icon }) {
 function Menu() {
   return (
     <div className="menu">
-      {/* <nav className="navbar">
-        <ul className="nav-list">
-          <li className="nav-item">
-            <Link to="/">Home</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/about">About</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/about">Pages</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/about">Project</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/contact">Contact</Link>
-          </li>
-        </ul>
-      </nav> */}
+      {/* <Button as="a" variant="danger">
+        Button as link
+      </Button> */}
+
+      <Navbar expand="lg" className="navbar">
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mr-auto">
+            <Nav.Link as={Link} to="/">
+              Home
+            </Nav.Link>
+            <Nav.Link as={Link} to="/about">
+              About
+            </Nav.Link>
+            <Nav.Link as={Link} to="/pages">
+              Pages
+            </Nav.Link>
+            <Nav.Link as={Link} to="/project">
+              Project
+            </Nav.Link>
+            <Nav.Link as={Link} to="/contact">
+              Contact
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+
+      {/* <Navbar expand="lg" bg="light" variant="light">
+        <Navbar.Brand href="#">Navbar</Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarNav" />
+        <Navbar.Collapse id="navbarNav">
+          <Nav className="mr-auto">
+            <Nav.Link href="#" className="active">
+              Home
+            </Nav.Link>
+            <Nav.Link href="#">Features</Nav.Link>
+            <Nav.Link href="#">Pricing</Nav.Link>
+            <Nav.Link href="#" disabled>
+              Disabled
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar> */}
     </div>
   );
 }

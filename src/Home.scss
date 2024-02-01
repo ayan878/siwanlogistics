@@ -24,7 +24,7 @@ $gradient-color: linear-gradient(94deg, #ffb629 0%, #ffda56 51%, #ffd7a6 100%);
 }
 
 // Import Bootstrap
-@import '~bootstrap/scss/bootstrap';
+// @import '~bootstrap/scss/bootstrap';
 
 * {
   margin: 0;
@@ -42,7 +42,8 @@ body {
 }
 
 .header {
-  max-width: 1200px;
+  // max-width: 1200px;
+  width: 100vw;
   margin: 0 auto;
   height: 100px;
   background-color: var(--primary-color-blue);
